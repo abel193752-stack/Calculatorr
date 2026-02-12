@@ -21,10 +21,10 @@ root.title("calc")
 root.geometry("300x250")
 
 # Buttons
-tkinter.Button(root, text="Add", calculate("+")).pack(pady=2)
-tkinter.Button(root, text="Subtract", calculate("-")).pack(pady=2)
-tkinter.Button(root, text="Multiply", calculate("*")).pack(pady=2)
-tkinter.Button(root, text="Divide", calculate("/")).pack(pady=2)
+tkinter.Button(root, text="Add",command=lambda: calculate("+")).pack(pady=2)
+tkinter.Button(root, text="Subtract",command=lambda: calculate("-")).pack(pady=2)
+tkinter.Button(root, text="Multiply",command=lambda: calculate("*")).pack(pady=2)
+tkinter.Button(root, text="Divide",command=lambda: calculate("/")).pack(pady=2)
 
 # Result
 label_result = tk.Label(root, text="Result: ")
