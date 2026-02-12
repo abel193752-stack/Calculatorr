@@ -1,6 +1,3 @@
-import tkinter as tk
-from tkinter import messagebox
-
 def calculate(operator):
     try:
         num1 = float(entry1.get())
@@ -24,12 +21,13 @@ root.title("calc")
 root.geometry("300x250")
 
 # Buttons
-tk.Button(root, text="Add", calculate("+")).pack(pady=2)
-tk.Button(root, text="Subtract", calculate("-")).pack(pady=2)
-tk.Button(root, text="Multiply", calculate("*")).pack(pady=2)
-tk.Button(root, text="Divide", calculate("/")).pack(pady=2)
+tkinter.Button(root, text="Add", calculate("+")).pack(pady=2)
+tkinter.Button(root, text="Subtract", calculate("-")).pack(pady=2)
+tkinter.Button(root, text="Multiply", calculate("*")).pack(pady=2)
+tkinter.Button(root, text="Divide", calculate("/")).pack(pady=2)
 
 # Result
 label_result = tk.Label(root, text="Result: ")
 
 root.mainloop()
+
